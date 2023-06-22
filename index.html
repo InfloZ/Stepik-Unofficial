@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Каталог онлайн-курсов – Stepik</title>
+<link rel="stylesheet" href="style.css"/>
+
+<!-- Фавикон (иконка) для ярлычка сайта -->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+	
+<!-- Работа с чёрным прямоугольником (хэдэром) и его кнопками -->
+<header>
+  <div class="logo">
+    <img src="img/topbar_logo.svg">
+
+<!-- Левые кнопки: "Каталог" и "Преподавание" -->	
+	<div class="left-buttons">
+		<button class="catalog-button">Каталог</button>
+		<button class="teaching-button">Преподавание</button>
+  </div>
+
+<!-- Правые кнопки: "Войти" и "Регистрация" -->
+	<div class="right-buttons">
+		<button class="login-button">Войти</button>
+		<button class="register-button">Регистрация</button>
+  </div>
+
+<!-- Правая кнопка: "Поисковая строка" -->  
+    <div class="search-bar">
+      <input type="text" placeholder="🔍︎ Поиск. . ." class="search-input">
+    </div>
+ 
+</header>
+
+
+<!-- "Поисковая строка авторов, курсов и др." --> 
+<div class="search-container2">
+  <input type="text" class="search-input2" placeholder="🔍 Название курса, автор или предмет">
+
+<!-- "Выпадающее меню" -->   
+  <select class="dropdown-menu">
+    <option value="all">На любом языке</option>
+    <option value="rus">На русском</option>
+    <option value="eng">На английском</option>
+  </select>
+
+<!-- "Маркеры (с глалочками)" -->   
+  <label class="checkbox-label">
+    <input type="checkbox" class="checkbox-input">  С сертификатами</label>
+	
+  <label class="checkbox-label2">
+    <input type="checkbox" class="checkbox-input">  Бесплатные</label>
+
+<!-- "Кнопка поиска (нерабочая)" --> 	
+	<button class="search-button3">Искать</button>
+</div>
+
+<div class="catalog-wrapper">
+  <div class="catalog-container">
+	<h1> Онлайн-курсы ↓</h1>
+
+<!-- "Ссылки на разделы" --> 	    
+	<div class="tabs">
+		<a href="#section1">Новые курсы</a>
+		<a href="#section2">Популярные курсы</a>
+		<a href="#section3">Курсы по разработке игр</a>
+		<a href="#section4">Go (Golang)</a>
+		<a href="#section5">Курсы по C#</a>
+	</div>
+
+<!-- "Разделы" --> 		
+	<div class="sections">
+	
+	 <!-- "РАЗДЕЛ 1-ЫЙ" --> 
+		<div id="section1" class="section">
+			<div class="catalog-item">
+				<img src = "img/1.jpg" width="72px" height="72px">
+				<h4>Go Тренажер</h4>
+				<p>Sergey <br> Romanenko</p>
+				<a href="оплата">499 ₽</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/5.png" width="72px" height="72px">
+				<h4>Django 4 для <br> начинающих </h4>
+				<p>Илья Перминов</p>
+				<a href="оплата">999 ₽</a>
+			</div>	
+	
+			<div class="catalog-item">
+				<img src = "img/6.png" width="72px" height="72px">
+				<h4>Осваиваем Pandas: введение <br> в анализ данных </h4>
+				<p>Александр Сидоров</p>
+				<a href="оплата">440 ₽</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/2.png" width="72px" height="72px">
+				<h4>Рисунок карандашом по - <br> строение лица шаг за шагом</h4>
+				<p>Askarov Workshop</p>
+				<a href="оплата">590 ₽</a>
+			</div>	
+
+			<div class="catalog-item">
+				<img src = "img/3.png" width="72px" height="72px">
+				<h4>Pandas, Numpy, Matplotib - <br> для начинающих</h4>
+				<p>Nikita G.</p>
+				<a href="оплата">1050 ₽</a>
+			</div>	 			
+			
+			<div class="catalog-item">
+				<img src = "img/66.png" width="72px" height="72px">
+				<h4>Старт карьеры в IT. Front - <br> end разработчик сайтов </h4>
+				<p>Дмитрий Фокеев</p>
+				<a href="оплата">3890 ₽</a>
+			</div>	 
+		
+		</div>
+
+		<!-- "РАЗДЕЛ 2-ОЙ" --> 
+			<div id="section2" class="section">
+				<div class="catalog-item">
+					<img src = "img/7.png" width="72px" height="72px">
+					<h4>"Поколение Python": курс <br> для начинающих</h4>
+					<p>Тимур Гуев</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/8.jpg" width="72px" height="72px">
+					<h4>Интерактивный тренажер <br> по SQL</h4>
+					<p>Дальневосточный университет </p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/64.png" width="72px" height="72px">
+					<h4>Программирование <br>на Python</h4>
+					<p>Bioinformatics Institute</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/10.png" width="72px" height="72px">
+					<h4>"Поколение Python": курс <br> для продвинутых</h4>
+					<p>Тимур Гуев</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/12.jpg" width="72px" height="72px">
+					<h4>Инди-курс программирования <br> на Python</h4>
+					<p>Артем Егоров</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/65.png" width="72px" height="72px">
+					<h4>Добрый, добрый Python - <br >курс от Сергея Балакирева</h4>
+					<p>Сергей Балакирев</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div> 
+					
+			</div>
+
+		
+		<!-- "РАЗДЕЛ 3-ИЙ" --> 
+			<div id="section3" class="section">
+				<div class="catalog-item">
+					<img src = "img/13.png" width="72px" height="72px">
+					<h4>Android App - игра <br> "Крестики-Нолики" на Kotlin.</h4>
+					<p>Алексей Охотниченко</p>
+					<a href="оплата">100 ₽</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/14.jpg" width="72px" height="72px">
+					<h4>Unity и Unreal <br> начальный курс</h4>
+					<p>Елена Тинькова</p>
+					<a href="оплата">3000 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/15.jpg" width="72px" height="72px">
+					<h4>Unity. Создаём шутер от <br> первого лица (FPS)</h4>
+					<p>Alexandr S</p>
+					<a href="оплата">500 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/16.jpeg" width="72px" height="72px">
+					<h4>Программирование на <br> Kotlin - игра Марио</h4>
+					<p>Михаил Лебедев</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/17.jpg" width="72px" height="72px">
+					<h4>Уроки Unity 3D - Разработка игр <br> Занятия для детей</h4>
+					<p>Школа Пиксель</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/18.jpg" width="72px" height="72px">
+					<h4>Программирование для <br> детей</h4>
+					<p>Школа Пиксель</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>					
+			</div>
+
+		<!-- "РАЗДЕЛ 4-ЫЙ" --> 
+			<div id="section4" class="section">
+				<div class="catalog-item">
+					<img src = "img/18.png" width="72px" height="72px">
+					<h4>Разработка веб-приложений <br> на Go (GoLang)</h4>
+					<p>Илья Шаляпин</p>
+					<a href="оплата">1200 ₽</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/19.png" width="72px" height="72px">
+					<h4>Thank Go! Стандартная <br> библиотека Golang</h4>
+					<p>Антон Жиянов</p>
+					<a href="оплата">900 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/20.png" width="72px" height="72px">
+					<h4>Продвинутая работа с <br> ошибками и паникой в Go</h4>
+					<p>Антон Телышев, Дмитрий Назарков</p>
+					<a href="оплата">30400 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/21.png" width="72px" height="72px">
+					<h4>Thank Go! Стандартная <br> многозадачность в Golang</h4>
+					<p>Антон Жиянов</p>
+					<a href="оплата">900 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/22.jpeg" width="72px" height="72px">
+					<h4>Продвинутая работа с <br> паникой в Go</h4>
+					<p>Антон Телышев, Дмитрий Назарков</p>
+					<a href="оплата">16720 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/23.jpg" width="72px" height="72px">
+					<h4>Продвинутая работа с <br> ошибками в Go</h4>
+					<p>Антон Телышев, Дмитрий Назарков</p>
+					<a href="оплата">21280 ₽</a>
+				</div>				
+			</div>
+
+		<!-- "РАЗДЕЛ 5-ЫЙ" --> 
+			<div id="section5" class="section">
+				<div class="catalog-item">
+					<img src = "img/24.png" width="72px" height="72px">
+					<h4>Revit Plugins. Пишем плагины <br> под Autodesk на C#</h4>
+					<p>Руслан Шишмарв</p>
+					<a href="оплата">4500 ₽</a>
+				</div>					
+	 
+				<div class="catalog-item">
+					<img src = "img/25.png" width="72px" height="72px">
+					<h4>C# для обучающихся в <br> IT-кубе</h4>
+					<p>Елена Тинькова</p>
+					<a href="оплата">2890 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/26.jpg" width="72px" height="72px">
+					<h4>Написание оконных при- <br>ложений на C# </h4>
+					<p>Иосиф Дзеранов, Pro C#</p>
+					<a href="оплата">41990 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/26.jpg" width="72px" height="72px">
+					<h4>Написание оконных при- <br>ложений на C#. ВСЕ САМ </h4>
+					<p>Иосиф Дзеранов, Pro C#</p>
+					<a href="оплата">29990 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/28.png" width="72px" height="72px">
+					<h4>Основы разработки игр на <br> C#</h4>
+					<p>Alex Vallysoft</p>
+					<a href="оплата">3500 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/29.jpg" width="72px" height="72px">
+					<h4>C# для продвинутых</h4>
+					<p>Иосиф Дзеранов, <br> Pro C#</p>
+					<a href="оплата">11990 ₽</a>
+				</div>					
+			</div>
+
+		<script>
+			const tabs = document.querySelectorAll('.tabs a');
+			const sections = document.querySelectorAll('.sections .section');
+
+			// По умолчанию отображаем первый раздел
+			sections[0].style.display = 'block';
+
+			// Обрабатываем нажатие
+			tabs.forEach((tab, index) => {
+			  tab.addEventListener('click', (e) => {
+				e.preventDefault();
+
+				// Скрываем все разделы
+				sections.forEach((section) => {
+				  section.style.display = 'none';
+				});
+
+				// Отображаем выбранный раздел
+				sections[index].style.display = 'block';
+			  });
+			});
+		</script>
+
+	</div>
+  </div>
+</div>
+
+<!-- Раздел с ботами -->
+<div class="container2">
+ <div class="wrapper-container2">
+   <div class="title-wrapper">
+     <h1>Создаём своего первого бота</h1>
+   </div>
+	<div class="big-block">
+		<img src = "img/30.png" height="155px">
+		<h4> Научитесь создавать чат-ботов
+		<br> с программированием и без. Оптимизируйте рутинные процессы 
+		<br> и настройте автоматизацию коммуникаций с клиентами 
+		<br> в мессенджерах и социальных сетях.</h4>
+		<a href="ссылка">Узнать больше</a>
+	</div>	
+		
+	<div class="small-block-container">
+		<div class="small-block">
+			<img src = "img/31.png" width="72px" height="72px">
+			<h4>Основы мессенджер <br> маркетинга</h4>
+			<p>Standgram Образовательное <br> пространство</p>
+			<a href="оплата">3000 ₽</a>
+		</div>
+		
+		<div class="small-block">
+			<img src = "img/32.png" width="72px" height="72px">
+			<h4>Создание бота в Telegram <br>на Node.js</h4>
+			<p>Михаил <br> Михайлов</p>
+			<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+		</div>
+	</div>
+  
+	<div class="small-block-container">
+		<div class="small-block">
+			<img src = "img/33.jpeg" width="72px" height="72px">
+			<h4>Создание бота в <br> Telegram</h4>
+			<p>Дмитрий <br> Лавровский</p>
+			<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+		</div>
+		
+		<div class="small-block">
+			<img src = "img/34.png" width="72px" height="72px">
+			<h4>Технический администратор <br> проектов в Telegram</h4>
+			<p>Standgram Образовательное <br> пространство</p>
+			<a href="оплата">4500 ₽</a>
+		</div>
+	</div>
+ </div>
+</div>
+
+
+<div class="catalog-wrapper2">
+  <div class="catalog-container2">
+	<h1> Собираем для вас ↓</h1>
+
+<!-- "Ссылки на разделы" --> 	    
+	<div class="tabs2">
+		<a href="#section7">Создавайте онлайн курсы</a>
+		<a href="#section8">Маркетинг</a>
+		<a href="#section9">Машинное обучение</a>
+		<a href="#section10">Моделирование зданий</a>
+	</div>
+
+<!-- "Разделы" --> 		
+	<div class="sections2">
+
+	
+	 <!-- "РАЗДЕЛ 1-ЫЙ" --> 
+		<div id="section7" class="sectiion">
+			<div class="catalog-item">
+				<img src = "img/35.png" width="72px" height="72px">
+				<h4>Создание курса на <br> Stepik</h4>
+				<p>Команда Stepik</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/36.png" width="72px" height="72px">
+				<h4>Секреты хороших <br> текстов</h4>
+				<p>ЦНОТ СПбГЭТУ "ЛЭТИ"</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	
+			<div class="catalog-item">
+				<img src = "img/37.png" width="72px" height="72px">
+				<h4>Ингрофикация. Введение.</h4>
+				<p>Иван Нефедьев, <br> Miroslava Bronnikova</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/38.png" width="72px" height="72px">
+				<h4>Создание платного курса <br> на Stepik</h4>
+				<p>Команда Stepik</p>
+				<a href="оплата">2990 ₽</a>
+			</div>	
+
+			<div class="catalog-item">
+				<img src = "img/39.jpeg" width="72px" height="72px">
+				<h4>Педагогический дизайн <br> УРОКА</h4>
+				<p>ФПОИСК АГУ</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>	 			
+			
+			<div class="catalog-item">
+				<img src = "img/40.png" width="72px" height="72px">
+				<h4>Цифровые инструменты и <br> сервисы для учителя</h4>
+				<p>ИИТО ЮНЕСКО</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>	 
+		
+		</div>
+
+		<!-- "РАЗДЕЛ 2-ОЙ"--> 
+			<div id="section8" class="sectiion">
+				<div class="catalog-item">
+					<img src = "img/41.png" width="72px" height="72px">
+					<h4>Введение в мобильный <br> маркетинг</h4>
+					<p>Appbooster Academy</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/42.png" width="72px" height="72px">
+					<h4>Instagram-маркетолог 3.0: <br> курс для начинающих</h4>
+					<p>Startgram Образовательное пространство</p>
+					<a href="оплата">1400 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/43.png" width="72px" height="72px">
+					<h4>Аналитик мобильных <br> приложений: для начинающих</h4>
+					<p>Startgram Образовательное пространство</p>
+					<a href="оплата">4500 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/44.png" width="72px" height="72px">
+					<h4>Инстаграм с нуля: выбор <br> ниши, продажи и продвижение.</h4>
+					<p>Мария Антонова</p>
+					<a href="оплата">900 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/45.png" width="72px" height="72px">
+					<h4>Основы интернет-<br>маркетинга</h4>
+					<p>Elizaveta Zaslavskaya</p>
+					<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+				</div>	
+
+				<div class="catalog-item">
+					<img src = "img/46.png" width="72px" height="72px">
+					<h4>Основы мессенджер-<br>маркетинга</h4>
+					<p>Startgram Образовательное пространство</p>
+					<a href="оплата">3000 ₽</a>
+				</div>					
+			</div>
+
+		
+		<!-- "РАЗДЕЛ 3-ИЙ" --> 
+			<div id="section9" class="sectiion">
+				<div class="catalog-item">
+					<img src = "img/47.png" width="72px" height="72px">
+					<h4>Введение в нейронные сети <br> (Keras/Tensorflow)</h4>
+					<p>Юлия Пономарева</p>
+					<a href="оплата">3500 ₽</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/48.png" width="72px" height="72px">
+					<h4>Машинное обучение <br> для руководителей</h4>
+					<p>ФРОО</p>
+					<a href="оплата">4000 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/49.png" width="72px" height="72px">
+					<h4>Практический Machine <br> Learning</h4>
+					<p>AI Education</p>
+					<a href="оплата">2900 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/50.png" width="72px" height="72px">
+					<h4>Математическая <br> статистика</h4>
+					<p>Виктория Колчина</p>
+					<a href="оплата">890 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/51.jpg" width="72px" height="72px">
+					<h4>Линейная Алгебра I: с <br> Mathcad Express</h4>
+					<p>Дмитрий Кирьянов</p>
+					<a href="оплата">490 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/52.jpg" width="72px" height="72px">
+					<h4>Машинное Обучение в <br> Python.</h4>
+					<p>Влад Бурмистов</p>
+					<a href="оплата">1900 ₽</a>
+				</div>					
+			</div>
+
+		<!-- "РАЗДЕЛ 4-ЫЙ" --> 
+			<div id="section10" class="sectiion">
+				<div class="catalog-item">
+					<img src = "img/53.png" width="72px" height="72px">
+					<h4>Archicad PRO</h4>
+					<p>Азат <br> Аюпов</p>
+					<a href="оплата">14990 ₽</a>
+				</div>
+	 
+				<div class="catalog-item">
+					<img src = "img/54.png" width="72px" height="72px">
+					<h4>BIM-Поддержка</h4>
+					<p>Станислав <br> Пуртов</p>
+					<a href="оплата">19900 ₽</a>
+				</div>
+	
+				<div class="catalog-item">
+					<img src = "img/55.png" width="72px" height="72px">
+					<h4>Revit 2023: Дизайн <br> интерьера</h4>
+					<p>Александр Бондарев</p>
+					<a href="оплата">4500 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/56.jpg" width="72px" height="72px">
+					<h4>BIM. Русско-английский <br> тренажёр по Revit</h4>
+					<p>Станислав Пуртов</p>
+					<a href="оплата">499 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/57.jpg" width="72px" height="72px">
+					<h4>Трудоустройсво в BIM: Как <br> подготовиться к собеседованию</h4>
+					<p>Andrey Rybakov</p>
+					<a href="оплата">2999 ₽</a>
+				</div>
+
+				<div class="catalog-item">
+					<img src = "img/55.png" width="72px" height="72px">
+					<h4>Revit 2023: Железобетонные <br> конструкции</h4>
+					<p>Александр Бондарев</p>
+					<a href="оплата">4500 ₽</a>
+				</div>					
+
+			</div>
+
+		<script>
+			const tabs2 = document.querySelectorAll('.tabs2 a');
+			const sections2 = document.querySelectorAll('.sections2 .sectiion');
+
+			// По умолчанию отображаем первый раздел
+			sections2[0].style.display = 'block';
+
+			// Обработка нажатия
+			tabs2.forEach((tab, index) => {
+			  tab.addEventListener('click', (e) => {
+				e.preventDefault();
+
+				// Скрываем все разделы
+				sections2.forEach((sectiion) => {
+				  sectiion.style.display = 'none';
+				});
+
+				// Отображаем выбранный раздел
+				sections2[index].style.display = 'block';
+			  });
+			});
+		</script>
+
+	</div>
+  </div>
+</div>
+
+<!-- Секция с предметами -->
+<div class="catalog-wrapper3">
+  <div class="catalog-container3">
+	<h1> Предметы </h1>	
+		<div class="new-section">
+		  <div class="row">
+			<div class="cell cell1">
+			  <span class="text-top-left">Математика</span>
+			  <span class="text-bottom-left">62 курса</span>
+			</div>
+			<div class="cell cell2">
+			  <span class="text-top-left">Языковые курсы</span>
+			  <span class="text-bottom-left">57 курсов</span>
+			</div>
+			<div class="cell cell3">
+			  <span class="text-top-left">Статистика и анализ <br> данных</span>
+			  <span class="text-bottom-left">63 курса</span>
+			</div>
+			<div class="cell cell4">
+			  <span class="text-top-left">Гумманитарные <br> науки</span>
+			  <span class="text-bottom-left">32 курса</span>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="cell cell1">
+			  <span class="text-top-left">Подготовка к ЕГЭ <br> и ОГЭ</span>
+			  <span class="text-bottom-left">34 курса</span>
+			</div>
+			<div class="cell cell2">
+			  <span class="text-top-left">Программирование <br> для начинающих</span>
+			  <span class="text-bottom-left">67 курсов</span>
+			</div>
+			<div class="cell cell3">
+			  <span class="text-top-left">Программирование <br> для опытных</span>
+			  <span class="text-bottom-left">62 курса</span>
+			</div>
+			<div class="cell cell4">
+			  <span class="text-top-left">Прокачать навыки</span>
+			  <span class="text-bottom-left">49 курсов</span>
+			</div>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<div class="catalog-wrapper4">
+  <div class="catalog-container4">
+	<h1> Часто ищут </h1>	
+		<div class="new-section">
+		  <div class="row">
+			<div class="cell cell5">
+			  <span class="text-top-left special-block-color">SQL и <br> базы данных</span>
+			  <span class="text-bottom-left special-block-color">23 курса</span>
+			</div>
+			<div class="cell cell2">
+			  <span class="text-top-left">Подготовка к ЕГЭ и <br> ОГЭ</span>
+			  <span class="text-bottom-left">34 курса</span>
+			</div>
+			<div class="cell cell2">
+			  <span class="text-top-left">Английский <br> язык</span>
+			  <span class="text-bottom-left">52 курса</span>
+			</div>
+			<div class="cell cell2">
+			  <span class="text-top-left">Статистика</span>
+			  <span class="text-bottom-left">11 курсов</span>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Разработка Python</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">JavaScript</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Kotlin</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Linux</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Go (Golang)</span>
+			</div>			
+		  </div>
+
+		  <div class="row">
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Java</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Физика</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Рисование</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Excel и Google Таблицы</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Русский язык</span>
+			</div>			
+		  </div>
+		  
+		  <div class="row">
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Психология</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Моделирование зданий</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Маркетинг и продажи</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Китайский язык</span>
+			</div>			
+		  </div>
+
+		  <div class="row">
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Теория вероятностей</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Научное мышление</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Тестирование ПО</span>
+			</div>			
+		  </div>		  
+
+		  <div class="row">
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Веб-разработка</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Аналитика данных</span>
+			</div>
+			<div class="mini-cell cell2">
+			  <span class="text-for-mini">Data Science и Machine Learning</span>
+			</div>			
+		  </div>	
+						
+		  </div>
+		</div>
+	</div>
+</div>	
+
+ </div>
+</div>
+
+
+<div class="catalog-wrapper5">
+  <div class="catalog-container5">
+	<h1> Авторы курсов </h1>
+	
+	 <!-- "РАЗДЕЛЫ" --> 
+			<div class="catalog-item2">
+				<img src = "img/58.png" width="72px" height="72px">
+				<h4 class="tipo-center">Ляйсан Хутова</h4>
+				<p align="right">5 курсов • 215K Подписчиков</p>
+			</div>
+	 
+			<div class="catalog-item2">
+				<img src = "img/59.png" width="72px" height="72px">
+				<h4 class="tipo-center">Shultais Education</h4>
+				<p align="right">6 курсов • 4.8K Подписчиков</p>
+			</div>
+	
+			<div class="catalog-item2">
+				<img src = "img/60.png" width="72px" height="72px">
+				<h4 class="tipo-center">Тотальный диктант</h4>
+				<p align="right">9 курсов • 115K Подписчиков</p>
+			</div>
+	 
+			<div class="catalog-item2">
+				<img src = "img/61.png" width="72px" height="72px">
+				<h4 class="tipo-center">Кухня PRO</h4>
+				<p align="right">14 курсов • 36.5K Подписчиков</p>
+			</div>	
+
+			<div class="catalog-item2">
+				<img src = "img/62.png" width="72px" height="72px">
+				<h4 class="tipo-center">Школа BEEGEEK</h4>
+				<p align="right">39 курсов • 206K Подписчиков</p>
+			</div>	 			
+			
+			<div class="catalog-item2">
+				<img src = "img/63.png" width="72px" height="72px">
+				<h4 class="tipo-center">Максим Степанников</h4>
+				<p align="right">5 курсов • 36.8K Подписчиков</p>
+			</div>	 
+		
+		</div>
+</div>
+
+<div class="catalog-wrapper6">
+  <div class="catalog-container6">
+	<h1> Рекомендованные курсы ↓</h1>
+	
+	 <!-- "РАЗДЕЛЫ" --> 
+			<div class="catalog-item">
+				<img src = "img/7.png" width="72px" height="72px">
+				<h4>"Поколение Python": курс <br> для начинающих</h4>
+				<p>Тимур Гуев</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/8.jpg" width="72px" height="72px">
+				<h4>Интерактивный тренажер <br> по SQL</h4>
+				<p>Дальневосточный университет </p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	
+			<div class="catalog-item">
+				<img src = "img/64.png" width="72px" height="72px">
+				<h4>Программирование <br>на Python</h4>
+				<p>Bioinformatics Institute</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>
+	 
+			<div class="catalog-item">
+				<img src = "img/10.png" width="72px" height="72px">
+				<h4>"Поколение Python": курс <br> для продвинутых</h4>
+				<p>Тимур Гуев</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>	
+
+			<div class="catalog-item">
+				<img src = "img/12.jpg" width="72px" height="72px">
+				<h4>Инди-курс программирования <br> на Python</h4>
+				<p>Артем Егоров</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div>				
+			
+			<div class="catalog-item">
+				<img src = "img/65.png" width="72px" height="72px">
+				<h4>Добрый, добрый Python - <br >курс от Сергея Балакирева</h4>
+				<p>Сергей Балакирев</p>
+				<a href="оплата" class="special-block-color-for-free">Бесплатно</a>
+			</div> 
+		
+	</div>
+</div>
+			
+<!-- Нижний прямоугольник (футэр) -->
+<div class="page">
+	<footer class="footer">
+		<div class="footer-container"> 
+				<div> 
+				<div class="footer-years"> © 2013 — 2023. Stepik </div>
+				<span>Наши условия <a href="other/test9.htm" style="color:#666666">использования</a>
+				<br>
+				и <a href="other/test10.htm" style="color:#666666">конфиденциальности</a></span> 
+				</div>
+				
+				<div class="downloads">
+					<a href="https://redirect.appmetrica.yandex.com/serve/168884546916387946"> <img alt="Get it on Apple Store" src="img/app-store-badge-ru.svg"> </a>
+					<a href="https://redirect.appmetrica.yandex.com/serve/312999733398396995"> <img alt="Get it on Google Play" src="img/google-play-badge-ru.png" width="135px" height="40px"> </a>
+				</div>	
+			
+		<!-- Список в футэре -->
+				<ul class="footer-list">
+					<li> <a href="other/test2.htm"> Авторам курсов</a> </li> <br>	 
+					<li> <a href="other/test3.htm"> Компаниям</a> </li> <br>	 
+					<li> <a href="other/test5.htm"> Помощь</a> </li> <br>	 
+					<li> <a href="other/test7.htm"> Контакты</a> </li>
+				</ul>
+
+		<!-- Список в футэре 2 -->
+				<ul class="footer-list2">
+					<li> <a href="other/test2.htm"> О проекте</a> </li> <br>	 
+					<li> <a href="other/test4.htm"> Команда</a> </li> <br>	 
+					<li> <a href="other/test6.htm"> Вакансии</a> </li> <br>	 
+					<li> <a href="other/test8.htm"> Прессе</a> </li>
+				</ul>
+		 
+				<div class="resheniya">
+					<p> 975 021 457 решений </p>
+				</div>
+
+				<div class="socmedia">
+					<a href="https://facebook.com/rustepik"> <img src="img/footer-fb.svg" width="32px" height="32px"> </a>
+					<a href="https://twitter.com/rustepik"> <img src="img/footer-twitter.svg" width="32px" height="32px"> </a>
+					<a href="https://vk.com/rustepik"> <img src="img/footer-vk.svg" width="32px" height="32px"> </a>
+					<a href="https://instagram.com/stepik.education/"> <img src="img/footer-instagram.svg" width="32px" height="32px"> </a>
+				</div>
+		</div>
+	</footer>
+</div>
+
+</body>
+</html> 

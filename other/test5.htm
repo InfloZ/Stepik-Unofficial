@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Справочный центр Stepik</title>
+    <link rel="icon" href="/ui/images/usedesk_logo_round.png"  type="image/ico">
+    <!--Import Google Icon Font-->
+    <link href="/ui/css/material_icons.css" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/ui/css/materialize.min.css"  media="screen,projection"/>
+    <!--Import style.css-->
+    <link type="text/css" rel="stylesheet" href="/ui/css/styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="_csrf_token" content="be3abf3f526f7c66.74rw48YwNkxs1_AToCqFKY19rns2XXflIegRQZ7Czlk.i7-Bs5dRdAU0uJplkUjOX_gu6ClDBS61Fd5gbOuR4zSav5GCoVpPBSStwA"/>
+    <meta name="description" content=""/>
+    <meta name="robots" content="noodp"/>
+    <meta name="keywords" content=""/>
+    <link rel="canonical" href="" />
+    <link rel="icon" href="https://ucarecdn.com/a656c716-fdab-4592-bf9f-afe1289a9717/" type="image/ico">
+<meta property="og:image" content="https://stepik.org/media/cache/images/courses/1/cover_9UEFr9h/439369edbebc5f4a833feab30d0591a2.png"/>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.card').forEach(item => {
+    item.setAttribute("data-is-clickable", true);
+
+    item?.addEventListener("click", e => {
+      const card = e.target.closest(".card");
+      const link = card.querySelector(".card-action a");
+      const href = link.getAttribute('href');
+      if (href) {
+        window.location.href = href;
+      }
+    });
+  });
+});
+</script>
+
+<style>
+  nav {
+    margin-bottom: 30px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+
+  .article-content h1,
+  .col h1 {
+    color: #222;
+    margin: 18px 0 24px;
+    line-height: 1.4;
+  }
+
+  .article-content h2 {
+    font-size: 20px;
+    margin: 28px 0 20px;
+  }
+
+  .article-content h3 {
+    font-size: 16px;
+    margin: 24px 0 18px;
+  }
+
+
+  a {
+    color: #4485ed;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(86, 164, 255, 0.3);
+    text-underline-offset: .2em;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover, a:focus {
+    color: #1466C6;
+    text-decoration-color: #1466C6;
+  }
+
+  a:active {
+    color: #4485ed;
+    text-decoration-color: #4485ed;
+  }
+
+  nav a {
+    text-decoration-line: none;
+  }
+
+  nav li a {
+    color: #bbb !important;
+    transition-property: color,border-color;
+    transition-duration: .3s
+  }
+
+  nav li a:hover,
+  nav li a:focus {
+    color: #6c6 !important;
+  }
+
+  nav li.active a {
+    color: #fff !important;
+  }
+
+
+  .main-form button[type=submit] {
+    background-color: #54ad54 !important;
+  }
+
+  .main-form input[name=query] {
+    border-color: #777 !important;
+  }
+
+  .card {
+    box-shadow: 1px 2px 12px 0 rgba(94,94,94,.12);
+  }
+  .card:hover,
+  .card:focus {
+    box-shadow: 1px 2px 12px 0 rgba(156,166,230,.6);
+  }
+  .card[data-is-clickable] {
+    cursor: pointer;
+  }
+
+  .card .card-content .card-title {
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: normal;
+    font-weight: 400;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+  }
+  .card .card-content p {
+    font-size: 14px;
+    color: #777;
+  }
+  .category-card.card .card-content + .card-action {
+    padding-top: 0;
+  }
+
+  .card .card-action a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.13;
+    letter-spacing: .15px;
+    text-transform: none !important;
+    color: #4485ed !important;
+  }
+
+  .card .card-action a:hover,
+  .card .card-action a:focus {
+    color: #1466C6 !important;
+    text-decoration-color: #1466C6;
+  }
+
+  .collection-block-title {
+    font-size: 22px !important;
+    -webkit-font-smoothing: antialiased;
+  }
+  .collection-block-title a {
+    text-decoration-color: rgba(0, 0, 0, 0.2);
+  }
+  .collection-block-title a:hover,
+  .collection-block-title a:focus {
+    text-decoration-color: rgba(0, 0, 0, 0.9);
+  }
+  .collection-block-title a:active {
+    text-decoration-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .collection-block-container {
+    margin-bottom: 20px !important;
+  }
+
+  .input-field {
+    border: 2px solid #bbb;
+  }
+  .input-field:focus-within {
+    border-color: #54ad54;
+  }
+
+  .side-search {
+    background-color: #fff !important;
+  }
+  .side-search .input-field input[type=search] {
+    padding-left: 45px;
+  }
+  .side-search .input-field input[type=search]+label {
+    left: 10px;
+  }
+  .side-search .input-field input[type=search]+label i {
+    color: #aaa;
+  }
+  .side-search .input-field input[type=search]:focus+label i {
+    color: #54ad54;
+  }
+  .side-search .input-field i.material-icons {
+    right: 10px;
+    transition: color .3s;
+  }
+  .side-search .input-field input[type=search]:focus ~ .material-icons {
+    color: #ccc;
+  }
+  .side-search .input-field input[type=search]:focus ~ .material-icons:hover {
+    color: #777;
+  }
+
+  .side-search .input-field input,
+  .side-search .input-field label,
+  .side-search .input-field i.material-icons {
+    height: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .collection {
+    border: none;
+  }
+
+  .collection .collection-item {
+    border-color: #eee;
+  }
+
+  .collection-header {
+    font-size: 18px;
+  }
+
+  .collection.with-header .collection-item {
+    padding: 10px 0;
+  }
+
+  .sticky-sidebar ul.collection .collapsible-body .collection-item a {
+    padding: 10px 0 10px 20px;
+  }
+
+  .sticky-sidebar ul.collection .collection-item {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: .15px;
+  }
+
+  .sticky-sidebar ul.collection .collection-item.active {
+    background-color: inherit;
+  }
+
+  .sticky-sidebar ul.collection .collection-item > a,
+  .sticky-sidebar ul.collection .collection-item > span,
+  .sticky-sidebar ul.collection .collection-item > .material-icons
+  {
+    color: #535366;
+    text-decoration-line: none;
+  }
+
+  .sticky-sidebar ul.collection .collection-item.active > a,
+  .sticky-sidebar ul.collection .collection-item.active > span,
+  .sticky-sidebar ul.collection .collection-item.active > .material-icons
+  {
+    color: #288b28 !important;
+    text-decoration-line: none;
+  }
+
+  .sticky-sidebar ul.collection .collapsible-body .collection-item a {
+    color: #535366;
+    text-decoration-line: none;
+  }
+
+  .sticky-sidebar ul.collection .collapsible-body .collection-item a:hover {
+    color: #000;
+    background-color: #e9f9e9;
+  }
+
+  .collapsible-header i {
+    margin-right: 0;
+  }
+
+
+  .z-depth-1,nav,.card-panel,.toast,.btn,.btn-large,.btn-floating,.dropdown-content,.collapsible,.side-nav {
+    box-shadow: none;
+  }
+
+
+  .popular-articles {
+    font-size: 16px;
+  }
+
+  .popular-articles a {
+    color: #222;
+    text-decoration-line: underline;
+    text-decoration-color: rgba(34, 34, 34, 0.3);
+    text-underline-offset: .2em;
+    text-decoration-thickness: 1px;
+  }
+
+  .popular-articles a:hover,
+  .popular-articles a:focus {
+    color: #222;
+    text-decoration-color: #222;
+  }
+
+  .popular-articles a:active {
+    color: #444;
+    text-decoration-color: #444;
+  }
+
+  ul.popular-articles {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-position: outside;
+  }
+
+  ul.popular-articles li::marker {
+    content: '– ';
+  }
+
+  .share_countr {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+  }
+
+  a.article-btn {
+    background-color: transparent;
+    color: #54ad54;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #54ad54;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  a.article-btn + a.article-btn {
+    margin-left: 2px;
+  }
+
+  .l9 ul.ya-share2__list_direction_horizontal {
+    margin-left: 0;
+  }
+
+  footer {
+    margin-top: 30px;
+    padding: 26px 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(248,248,248,1) 27%, rgba(246,246,246,1) 100%);
+  }
+
+  @media only screen and (min-width: 601px) {
+    nav,nav .nav-wrapper i,nav a.button-collapse,nav a.button-collapse i {
+      height: 50px;
+      line-height: 50px
+    }
+
+    .navbar-fixed {
+      height: 50px
+    }
+
+    .article-content,
+    .sticky-sidebar + .col {
+      padding-left: 30px !important;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container form.main-form {
+      width: auto !important;
+      margin: 30px 0;
+    }
+
+    .container nav.side-search {
+      margin-top: 0;
+    }
+  }
+</style>
+    <style>
+        a {
+							
+				color: #1466c6;
+				
+						        }
+
+        .collection-item {
+							
+				color: #1466c6 !important;
+				
+			            
+        }
+
+        nav a {
+							
+				  color: #f2f2f2 !important;
+				
+			        }
+
+                     
+                nav .dropdown-content {
+                    background-color: #333333;
+                }
+
+                nav .dropdown-content li:hover, nav .dropdown-content li.active {
+                    background-color: rgba(0,0,0,0.1);
+                }
+             
+        
+        a[name] {
+            color: inherit;
+        }
+
+                    
+                a[href^='#'] {
+                    color: #1466c6 ;
+                }
+            
+            </style>
+            
+            <link type="text/css" rel="stylesheet" href="/ui/css/redesign.css"  media="screen,projection"/>
+        
+    </head>
+<body style="background-color: #ffffff">
+<nav style="background-color: #333333">
+    <div class="nav-wrapper">
+        <div class="container" id='menu-container'>
+            <a href="/" class="brand-logo">
+                                        Справочный центр Stepik
+                    
+                            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+				                    
+						<li class="menu-element menu-mailto" data-id="mailto"><a href="mailto:help@stepik.org">help@stepik.org</a></li>
+                    
+                                                    <li class="menu-element menu-5641 "
+					data-id="5641">
+                        <a href="/collection/5641">Учащимся</a>
+                    </li>
+                                    <li class="menu-element menu-5642 "
+					data-id="5642">
+                        <a href="/collection/5642">Авторам</a>
+                    </li>
+                                    <li class="menu-element menu-5643 "
+					data-id="5643">
+                        <a href="/collection/5643">Организациям</a>
+                    </li>
+                
+				<li><a class="dropdown-button" href="#!" data-activates="menu-dropdown">Еще<i class="material-icons right">arrow_drop_down</i></a>
+					<ul id="menu-dropdown" class="dropdown-content" style="min-width: 200px;">
+													
+								<li class="menu-mailto"><a href="mailto:help@stepik.org">help@stepik.org</a></li>
+							
+																			<li class="menu-5641 "
+							data-id="5641">
+								<a href="/collection/5641">Учащимся</a>
+							</li>
+													<li class="menu-5642 "
+							data-id="5642">
+								<a href="/collection/5642">Авторам</a>
+							</li>
+													<li class="menu-5643 "
+							data-id="5643">
+								<a href="/collection/5643">Организациям</a>
+							</li>
+											</ul>
+				</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  	<section>
+  		<div class="container">
+  			<h5 class="center-align" style="color: #f2f2f2"></h5>
+            <form class="main-form" method="GET" action="/search">
+              <input name="query" type="text" placeholder="" style="border-color: #333333">
+                <button type="submit" class="waves-effect waves-light btn" style="background-color: #333333">Найти</button>
+           </form>
+                              <h4 class="collection-block-title"><a href="/collection/5641">Учащимся</a></h4>
+                <div class="row flex collection-block-container">
+                                                                      
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Регистрация, аккаунт и начало обучения на Stepik</span>
+                                            <div><p>Как создать аккаунт и начать учиться</p></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13070">5 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Как учиться на курсах и уроках</span>
+                                            <div><p>Знакомтсво с интерфейсом и функциональностью</p></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13074">9 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Задания на Stepik</span>
+                                            <div><p>Какие бывают задачи</p></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13076">3 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Мобильное приложение</span>
+                                            <div><p>Как учиться через приложение</p></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13078">5 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Часто задаваемые вопросы</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13081">17 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                              </div>
+                            <h4 class="collection-block-title"><a href="/collection/5642">Авторам</a></h4>
+                <div class="row flex collection-block-container">
+                                                                      
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Начало работы со Stepik</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13071">5 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Условия сотрудничества</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13072">2 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Платные курсы</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13080">13 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Создание курса</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13082">7 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Создание заданий</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13083">6 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Видео в курсах</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13084">3 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Настройки курса</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13085">13 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Дополнительные возможности для преподавателей</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13086">10 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Часто задаваемые вопросы</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13087">15 статей</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                              </div>
+                            <h4 class="collection-block-title"><a href="/collection/5643">Организациям</a></h4>
+                <div class="row flex collection-block-container">
+                                                                      
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Публикация Enterprise-курса</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13069">2 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Интеграция с другими платформами</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13073">3 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                                                                  
+                                <div class="col s12 m6 l4 category-card-wrapper">
+                                    <div class="card category-card">
+                                        <div class="card-content left-align">
+                                            <span class="card-title">Приватные курсы</span>
+                                            <div></div>
+                                        </div>
+                                        <div class="card-action left-align">
+                                            <a href="/category/13077">3 статьи</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                                              </div>
+              		</div>
+  	</section>
+
+<footer class="center-align">
+					
+				<a href="https://welcome.stepik.org/new-support-request" target="_blank">Отправить запрос в поддержку</a><br><br>
+© 2013 — 2023. <a href="https://stepik.org/?utm_source=hc" target="_blank">Stepik</a>
+			
+			
+    </footer>
+    <script type="text/javascript" src="/ui/js/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/ui/js/materialize.min.js"></script>
+    <script type="text/javascript" src="/ui/js/main.js"></script>
+    <script async src="https://lib.usedesk.ru/secure.usedesk.ru/widget_165119_44272.js"></script>
+</body>
+</html>
